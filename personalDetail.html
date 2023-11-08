@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/appointmentDate.css" />
+    <title>Personal Detail</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header-grid navigation">
+        <img src="/images/logo.png" alt="Logo" class="logo" />
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="#">Report</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-3 steps">
+          <h2>Follow these easy steps</h2>
+
+          <div class="diffsteps">
+            <p>Select a Department</p>
+            <img src="select.gif" class="decImage" />
+          </div>
+
+          <div class="diffsteps">
+            <p>Select a Doctor</p>
+            <img src="doctor.png" class="decImage" />
+          </div>
+
+          <div class="diffsteps">
+            <p>Select a Time Slot</p>
+            <img src="time.png" class="decImage" />
+          </div>
+
+          <div class="diffsteps">
+            <p>Provide your Personal Information</p>
+            <img src="personalinfo.png" class="decImage" />
+          </div>
+
+          <div class="diffsteps">
+            <p>Get Appointment confirmation</p>
+            <img src="confirm.png" class="decImage" />
+          </div>
+        </div>
+
+        <div class="col-8 ml-4">
+          <h2 class="mb-4">Personal Information</h2>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" aria-describedby="name" />
+            </div>
+
+            <div class="row">
+              <div class="col mb-3">
+                <label class="form-label">Age</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  aria-describedby="age"
+                />
+              </div>
+
+              <div class="col mb-3">
+                <label class="form-label">Gender</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-describedby="gender"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mb-3">
+                <label class="form-label">District</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  aria-describedby="age"
+                />
+              </div>
+
+              <div class="col mb-3">
+                <label class="form-label">Ward No</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-describedby="gender"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

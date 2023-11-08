@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* backgroung image */
+.page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/homeBackground.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.navigation {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+
+/* logo size and position */
+.logo {
+  width: 150px;
+  height: auto;
+  margin-left: 90px;
+}
+
+/* header and effects */
+ul {
+  flex: 1;
+  text-align: right;
+}
+ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 25px;
+}
+ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 10px;
+  position: relative;
+}
+ul li a::after {
+  content: "";
+  width: 0;
+  height: 10px;
+  background-color: #d5c9e8;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  transition: 0.5s;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+
+.appointment {
+  font-size: 35px;
+  color: #000;
+  margin-bottom: 100px;
+  font-weight: 100;
+  margin-left: 200px;
+  margin-top: 60px;
+}
+
+.steps {
+  border: 1px solid #e0b0ff;
+  padding: 20px;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  text-align: left;
+  line-height: 3;
+  margin-left: auto;
+  width: 35%;
+  height: 55%;
+}
+
+.steps h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  margin-left: 750px;
+}
+
+.steps p {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 100;
+  margin-left: 0;
+  line-height: 3;
+}
+
+.steps p {
+  font-size: large;
+}
+
+.decImage {
+  width: 60px;
+  height: 60px;
+}
+
+.main-container {
+  display: flex;
+  margin: 0px;
+  height: 100%;
+}
+
+.diffsteps {
+  display: flex;
+}
+
+.select {
+  width: 50px;
+  height: auto;
+  margin-top: -10px;
+}
+
+.confirm {
+  width: 80px;
+  height: auto;
+  margin-left: 90px;
+
+  /* .diffsteps div {
+      display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px; /* Adjust the space between each step */
+
+  /* }
+  
+  .diffsteps div p {
+      margin-right: 40px; /* Adjust the space between text and image */
+}
+
+.main-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.container {
+  padding: 40px;
+  height: 700px;
+  width: 900px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 12px;
+  column-gap: 12px;
+}
+
+.item {
+  height: 122px;
+  width: 122px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  border: 1px solid #e0b0ff;
+}
+
+.header-grid {
+  height: 150px;
+  width: full;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+.appointmentHeader {
+  margin-left: 80px;
+}
+
+.itemLogo {
+  margin-top: 5px;
+  height: auto;
+  width: 100px;
+}
